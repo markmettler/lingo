@@ -35,7 +35,10 @@ var	fifthletter = "";
 
 
 function start(){
+	 
 
+   
+  
 	var word = new Array;
 	word[0]="fikst";
 	word[1]="files";
@@ -139,11 +142,26 @@ function check(){
 	//fourthletter_input
 	//fifthletter_input
 	
+	if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
+		window.alert("You are a winner!");
+		
+	
+	}
+	
 	
 	
 	
 }
-
+/*
+function volgendewoord(){
+	if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
+		document.getElementById("volgendewoord").style.display="block";
+		
+	
+	}
+	location.reload();
+}
+*/
 
 	
 
