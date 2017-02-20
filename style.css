@@ -84,7 +84,7 @@ body {
 }
 
 
-#firstletter_input{
+.firstletter_input{
 	max-width: 180px;
 	min-width: 80px;
 	height: 180px;
@@ -105,7 +105,7 @@ body {
 }
 
 
-#secondletter_input{
+.secondletter_input{
 	max-width: 180px;
 	min-width: 80px;
 	height: 180px;
@@ -125,7 +125,7 @@ body {
 	-moz-box-sizing: border-box;
 }
 
-#thirdletter_input{
+.thirdletter_input{
 		max-width: 180px;
 	min-width: 80px;
 	height: 180px;
@@ -145,7 +145,7 @@ body {
 	-moz-box-sizing: border-box;
 }
 
-#fourthletter_input{
+.fourthletter_input{
 		max-width: 180px;
 	min-width: 80px;
 	height: 180px;
@@ -165,7 +165,7 @@ body {
 	-moz-box-sizing: border-box;
 }
 
-#fifthletter_input{
+.fifthletter_input{
 		max-width: 180px;
 	min-width: 80px;
 	height: 180px;

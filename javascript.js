@@ -136,11 +136,6 @@ function check(){
 		document.getElementById('fifthletter_input').style.backgroundColor="#ffad33";
 	}
 	
-	//firstletter_input
-	//secondletter_input
-	//thirdletter_input
-	//fourthletter_input
-	//fifthletter_input
 	
 	if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
 		window.alert("You are a winner!");
@@ -149,69 +144,211 @@ function check(){
 	}
 	
 	
+	//Hieronder de regels wanneer de letters niet goed zijn! 
 	
 	
-}
-/*
-function volgendewoord(){
-	if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
-		document.getElementById("volgendewoord").style.display="block";
+	
+	// Wanneer een van de letters niet goed is, hou dan de eerste letter vast, verplaatst die naar onder, en begin opnieuw. 
+	if (raad2 != secondletter || raad3 != thirdletter || raad4 != fourthletter || raad5 != fifthletter){
+	
+		//pakt de eerste letter van het woord
+		var firstletter = rdmWord.substring(0 ,1);					// filtert van het woord de laatste woorden weg en laat alleen de eerste letter zien
+		console.log(firstletter);									// wordt eerste letter getoont in de console log 
+		document.getElementById('firstletter_input_2').value=firstletter;	// wordt eerste letter getoont in display2 
 		
+		
+		
+		// Hieronder de nieuwe check
+			var raad2 = document.getElementById('secondletter_input_2').value;
 	
-	}
-	location.reload();
+			if ( raad2 == secondletter ) {
+				document.getElementById('secondletter_input_2').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 3e letter
+			var raad3 = document.getElementById('thirdletter_input_2').value;
+			
+			if ( raad3 == thirdletter ) {
+				document.getElementById('thirdletter_input_2').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 4e letter
+			var raad4 = document.getElementById('fourthletter_input_2').value;
+			
+			if ( raad4 == fourthletter ) {
+				document.getElementById('fourthletter_input_2').style.backgroundColor="#ffad33";
+			}
+			
+			
+			//controle op de 5e letter
+			var raad5 = document.getElementById('fifthletter_input_2').value;
+			
+			if ( raad5 == fifthletter ) {
+				document.getElementById('fifthletter_input_2').style.backgroundColor="#ffad33";
+			}
+			
+			
+			if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
+				window.alert("You are a winner!");
+				
+			
+			}
+		
+		
+	} //Afsluiting eerste if functie
+	
+	
+	
+	// Wanneer een van de letters niet goed is, hou dan de eerste letter vast, verplaatst die naar onder, en begin opnieuw. 
+	if (raad2 != secondletter || raad3 != thirdletter || raad4 != fourthletter || raad5 != fifthletter){
+	
+		//pakt de eerste letter van het woord
+		var firstletter = rdmWord.substring(0 ,1);					// filtert van het woord de laatste woorden weg en laat alleen de eerste letter zien
+		console.log(firstletter);									// wordt eerste letter getoont in de console log 
+		document.getElementById('firstletter_input_3').value=firstletter;	// wordt eerste letter getoont in display2 
+		
+		
+		
+		// Hieronder de nieuwe check
+			var raad2 = document.getElementById('secondletter_input_3').value;
+	
+			if ( raad2 == secondletter ) {
+				document.getElementById('secondletter_input_3').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 3e letter
+			var raad3 = document.getElementById('thirdletter_input_3').value;
+			
+			if ( raad3 == thirdletter ) {
+				document.getElementById('thirdletter_input_3').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 4e letter
+			var raad4 = document.getElementById('fourthletter_input_3').value;
+			
+			if ( raad4 == fourthletter ) {
+				document.getElementById('fourthletter_input_3').style.backgroundColor="#ffad33";
+			}
+			
+			
+			//controle op de 5e letter
+			var raad5 = document.getElementById('fifthletter_input_3').value;
+			
+			if ( raad5 == fifthletter ) {
+				document.getElementById('fifthletter_input_3').style.backgroundColor="#ffad33";
+			}
+			
+			
+			if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
+				window.alert("You are a winner!");
+				
+			
+			}
+		
+		
+	}//Afsluiting eerste if 
+	
+	
+	
+	// Wanneer een van de letters niet goed is, hou dan de eerste letter vast, verplaatst die naar onder, en begin opnieuw. 
+	if (raad2 != secondletter || raad3 != thirdletter || raad4 != fourthletter || raad5 != fifthletter){
+	
+		//pakt de eerste letter van het woord
+		var firstletter = rdmWord.substring(0 ,1);					// filtert van het woord de laatste woorden weg en laat alleen de eerste letter zien
+		console.log(firstletter);									// wordt eerste letter getoont in de console log 
+		document.getElementById('firstletter_input_4').value=firstletter;	// wordt eerste letter getoont in display2 
+		
+		// Hieronder de nieuwe check
+			var raad2 = document.getElementById('secondletter_input_4').value;
+	
+			if ( raad2 == secondletter ) {
+				document.getElementById('secondletter_input_4').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 3e letter
+			var raad3 = document.getElementById('thirdletter_input_4').value;
+			
+			if ( raad3 == thirdletter ) {
+				document.getElementById('thirdletter_input_4').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 4e letter
+			var raad4 = document.getElementById('fourthletter_input_4').value;
+			
+			if ( raad4 == fourthletter ) {
+				document.getElementById('fourthletter_input_4').style.backgroundColor="#ffad33";
+			}
+			
+			
+			//controle op de 5e letter
+			var raad5 = document.getElementById('fifthletter_input_4').value;
+			
+			if ( raad5 == fifthletter ) {
+				document.getElementById('fifthletter_input_4').style.backgroundColor="#ffad33";
+			}
+			
+			
+			if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
+				window.alert("You are a winner!");
+				
+			
+			}
+		
+		
+	} //Afsluiting eerste if
+	
+	
+	// Wanneer een van de letters niet goed is, hou dan de eerste letter vast, verplaatst die naar onder, en begin opnieuw. 
+	if (raad2 != secondletter || raad3 != thirdletter || raad4 != fourthletter || raad5 != fifthletter){
+	
+		//pakt de eerste letter van het woord
+		var firstletter = rdmWord.substring(0 ,1);					// filtert van het woord de laatste woorden weg en laat alleen de eerste letter zien
+		console.log(firstletter);									// wordt eerste letter getoont in de console log 
+		document.getElementById('firstletter_input_5').value=firstletter;	// wordt eerste letter getoont in display2 
+		
+		// Hieronder de nieuwe check
+			var raad2 = document.getElementById('secondletter_input_5').value;
+	
+			if ( raad2 == secondletter ) {
+				document.getElementById('secondletter_input_5').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 3e letter
+			var raad3 = document.getElementById('thirdletter_input_5').value;
+			
+			if ( raad3 == thirdletter ) {
+				document.getElementById('thirdletter_input_5').style.backgroundColor="#ffad33";
+			}
+			
+			//controle op de 4e letter
+			var raad4 = document.getElementById('fourthletter_input_5').value;
+			
+			if ( raad4 == fourthletter ) {
+				document.getElementById('fourthletter_input_5').style.backgroundColor="#ffad33";
+			}
+			
+			
+			//controle op de 5e letter
+			var raad5 = document.getElementById('fifthletter_input_5').value;
+			
+			if ( raad5 == fifthletter ) {
+				document.getElementById('fifthletter_input_5').style.backgroundColor="#ffad33";
+			}
+			
+			
+			if (raad2 == secondletter && raad3 == thirdletter && raad4 == fourthletter && raad5 == fifthletter){
+				window.alert("You are a winner!");
+				
+			
+			}
+		
+		
+		
+	} //afsluiting eerste if 
+	
 }
-*/
+
 
 	
 
-/*
-var word = words[Math.floor(Math.random()*things.length)];
 
-	switch(words) {
-			
-			case '1':
-				var word = fikst;
-				break;
-				
-			case '2':
-				var word = files;
-				break;
-				
-			case '3':
-				var word = filet;
-				break;
-			
-			case '4':
-				var word = films;
-				break;
-				
-			case '5':
-				var word = filmt;
-				break;
-			
-			case '6':
-				var word = afdak;
-				break;
-			
-			case '7':
-				var word = afdek;
-				break;
-				
-			case '8':
-				var word = banen;
-				break;
-				
-				
-			case '9':
-				var word = beest;
-				break;
-				
-			case '10':
-				var word = beeld;
-				break;
-				
-				
-		}
-		document.getElementById('word').innerHTML = word; 
-*/
